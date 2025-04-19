@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Zeyad_fit0 (TDEE)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png.png">
+</head>
+<body>
+  <div class="container">
+    <h1>حاسبة السعرات (TDEE)</h1>
+
+    <label>الطول (سم):</label>
+    <input type="number" id="height" />
+
+    <label>الوزن (كجم):</label>
+    <input type="number" id="weight" />
+
+    <label>العمر (سنة):</label>
+    <input type="number" id="age" />
+
+    <label>الجنس:</label>
+    <select id="gender">
+      <option value="male">ذكر</option>
+      <option value="female">أنثى</option>
+    </select>
+
+    <label>معدل النشاط:</label>
+    <select id="activity">
+      <option value="1.3">1.3 - قليل النشاط (تمرين 1-2 مرات/أسبوع)</option>
+      <option value="1.5">1.5 - متوسط النشاط (تمرين 3-4 مرات/أسبوع)</option>
+      <option value="1.7">1.7 - نشيط (تمرين 5-6 مرات/أسبوع)</option>
+      <option value="1.9">1.9 - نشيط جداً (تمرين يومي أو مرتين باليوم)</option>
+    </select>
+
+    <label>الهدف:</label>
+    <select id="goal">
+      <option value="maintain">المحافظة</option>
+      <option value="cut">خسارة وزن</option>
+      <option value="bulk">زيادة وزن</option>
+    </select>
+
+    <label>نسبة البروتين (جم/كجم):</label>
+    <select id="proteinRatio">
+      <option value="1.2">1.2</option>
+      <option value="1.4">1.4</option>
+      <option value="1.6">1.6</option>
+      <option value="1.7">1.7</option>
+      <option value="1.8">1.8</option>
+      <option value="2.2" selected>2.2</option>
+    </select>
+
+    <label>نسبة الدهون (% من السعرات):</label>
+    <select id="fatRatio">
+      <option value="0.05">5%</option>
+      <option value="0.10">10%</option>
+      <option value="0.15">15%</option>
+      <option value="0.25">25%</option>
+      <option value="0.26">26%</option>
+      <option value="0.27">27%</option>
+      <option value="0.28">28%</option>
+      <option value="0.29">29%</option>
+      <option value="0.30">30%</option>
+    </select>
+
+    <button onclick="calculateTDEE()">احسب السعرات</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
