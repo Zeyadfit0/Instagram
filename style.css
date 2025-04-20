@@ -72,3 +72,43 @@ button:hover {
   border-radius: 8px;
   color: #333;
 }
+
+footer .logo {
+  color: #00bfff;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.site-name {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  z-index: 999;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  font-family: 'Tahoma', sans-serif;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 6px 12px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.site-name span {
+  color: #00bfff;
+}
